@@ -21,7 +21,7 @@ var util = require('util'),
     assert = require('assert'),
     path = require('path'),
     fs = require('fs'),
-    Factory = require('workflow').Factory,
+    Factory = require('node-workflow').Factory,
     aWorkflow = require('./shared-workflow');
 
 aWorkflow.name = 'a gist created using node-workflow module';
