@@ -11,7 +11,7 @@ Pre-requirements:
 # Clone the repo and build the deps:
 
     git clone git://github.com/kusor/node-workflow-example.git
-    cd node-workflow
+    cd node-workflow-example
     make all
 
 Note `make all` will setup all the required dependencies, node modules and run
@@ -30,19 +30,19 @@ or different machines, as far as they have access to Redis Server.
 
 This repository contains everything needed to illustrate:
 
-- An example config file - `examples/config.json.sample` which should be
-  renamed to `examples/config.json` and modified to properly match your local
+- An example config file - `config.json.sample` which should be
+  renamed to `config.json` and modified to properly match your local
   environment.
 
 Remember that, in order to process any `job` the `workflow-runner` needs
 to be initialized pointing to the aforementioned configuration file:
 
-    ./bin/workflow-runner examples/config.json
+    ./node_modules/.bin/workflow-runner config.json
 
 Also, in order to be able to run the API based example mentioned below, the
 `workflow-api` HTTP server needs to be up and running too:
 
-    ./bin/workflow-api examples/config.json
+    ./node_modules/.bin/workflow-api config.json
 
 Contents for the other files are:
 
