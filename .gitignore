@@ -1,0 +1,13 @@
+node_modules
+var/*
+*.tar.gz
+*.tar.bz2
+*.log
+coverage
+docs/*.json
+docs/*.html
+build
+*.log
+*.json
+workflow-indentifier
+*.vim

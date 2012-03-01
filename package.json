@@ -1,0 +1,20 @@
+{
+  "author": "Pedro Palazón Candel <kusorbox@gmail.com> (http://www.joyent.com)",
+  "name": "workflow-example",
+  "description": "Node Workflow usage examples",
+  "version": "0.1.0",
+  "homepage": "https://github.com/kusor/node-workflow-example",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kusor/node-workflow-example.git"
+  },
+  "engines": {
+    "node": ">=0.6"
+  },
+  "dependencies": {
+    "workflow": "0.1.0",
+    "workflow-redis-backend": "0.1.0",
+    "restify": "1.0.0"
+  },
+  "devDependencies": {}
+}
