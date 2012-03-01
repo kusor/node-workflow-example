@@ -3,11 +3,12 @@
 // Usage example for node-workflow using the REST API to create
 // workflows, queue jobs and obtain the results.
 
-// NOTE it needs `examples/wf-api.js` and `examples/wf-runner.js` running
+// NOTE it needs `./node_modules/.bin/workflow-api` and
+// `./node_modules/.bin/workflow-runner.js` running
 // before you run this file.
 
 // Call from parent directory with:
-//   `node examples/api.js $login $password`
+//   `node api.js $login $password`
 
 if (process.argv.length < 4) {
   console.error('Github username and password required as arguments');

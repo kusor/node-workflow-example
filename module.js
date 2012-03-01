@@ -3,10 +3,11 @@
 // Usage example for node-workflow using it as a node module to create
 // workflows, queue jobs and obtain the results.
 
-// NOTE it needs `examples/wf-runner.js` running before you run this file.
+// NOTE it needs `./node_modules/.bin/workflow-runner.js` running before you
+// run this file.
 
 // Call from parent directory with:
-//   `node examples/module.js $login $password`
+//   `node module.js $login $password`
 
 if (process.argv.length < 4) {
   console.error('Github username and password required as arguments');
@@ -20,7 +21,7 @@ var util = require('util'),
     assert = require('assert'),
     path = require('path'),
     fs = require('fs'),
-    Factory = require('../lib/index').Factory,
+    Factory = require('workflow').Factory,
     aWorkflow = require('./shared-workflow');
 
 aWorkflow.name = 'a gist created using node-workflow module';
