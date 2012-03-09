@@ -1,7 +1,7 @@
 // Copyright 2012 Pedro P. Candel <kusorbox@gmail.com>. All rights reserved.
 
 // This is an example of the same gist API requests made straight from NodeJS
-// without using node-workflow, so differences can be quickly stablished with
+// without using wf, so differences can be quickly stablished with
 // the way to proceed to write workflow tasks
 
 if (process.argv.length < 4) {

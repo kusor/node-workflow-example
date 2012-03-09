@@ -1,6 +1,6 @@
 // Copyright 2012 Pedro P. Candel <kusorbox@gmail.com>. All rights reserved.
 
-// Usage example for node-workflow using it as a node module to create
+// Usage example for wf using it as a node module to create
 // workflows, queue jobs and obtain the results.
 
 // NOTE it needs `./node_modules/.bin/workflow-runner.js` running before you
@@ -21,10 +21,10 @@ var util = require('util'),
     assert = require('assert'),
     path = require('path'),
     fs = require('fs'),
-    Factory = require('node-workflow').Factory,
+    Factory = require('wf').Factory,
     aWorkflow = require('./shared-workflow');
 
-aWorkflow.name = 'a gist created using node-workflow module';
+aWorkflow.name = 'a gist created using wf module';
 
 var config_file = path.normalize(__dirname + '/config.json');
 fs.readFile(config_file, 'utf8', function (err, data) {
