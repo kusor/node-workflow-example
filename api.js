@@ -4,7 +4,7 @@
 // workflows, queue jobs and obtain the results.
 
 // NOTE it needs `./node_modules/.bin/workflow-api` and
-// `./node_modules/.bin/workflow-runner.js` running
+// `./node_modules/.bin/workflow-runner` running
 // before you run this file.
 
 // Call from parent directory with:

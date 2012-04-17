@@ -8,6 +8,7 @@ docs/*.json
 docs/*.html
 build
 *.log
-*.json
+package.json
+config.json
 workflow-indentifier
 *.vim

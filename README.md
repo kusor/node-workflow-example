@@ -6,7 +6,20 @@ Usage examples for [node-workflow](http://kusor.github.com/node-workflow/).
 
 Pre-requirements:
 
+These examples can run using any of the supported backend modules for `wf`.
+Example files are provided for these modules.
+
+If you want to run the example using Redis, you need:
+
 - Working Redis Server. (Version 2.4.+).
+- Use `config.redis.json` as your configuration file when running the services.
+- Copy the file `package-redis.json` to `package.json`.
+
+If you want to use PostgreSQL:
+
+- Working PostgreSQL 9+ server.
+- Use `config.pg.json` as your configuration file when running the services.
+- Copy the file `package-pg.json` to `package.json`.
 
 # Clone the repo and build the deps:
 
@@ -30,8 +43,7 @@ or different machines, as far as they have access to Redis Server.
 
 This repository contains everything needed to illustrate:
 
-- An example config file - `config.json.sample` which should be
-  renamed to `config.json` and modified to properly match your local
+- An example config file which should be modified to properly match your local
   environment.
 
 Remember that, in order to process any `job` the `workflow-runner` needs
