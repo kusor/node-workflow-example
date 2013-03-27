@@ -66,8 +66,8 @@ fs.readFile(config_file, 'utf8', function (err, data) {
                         } else {
                             console.log('Job finished. Here come the results:');
                             console.log(util.inspect(obj, false, 8));
-                            // Only one workflow with the same name, need to delete it
-                            // to allow creating it again:
+                            // Only one workflow with the same name, need to
+                            // delete it to allow creating it again:
                             backend.deleteWorkflow(wf, function (err, res) {
                                 assert.ifError(err);
                                 assert.ok(res);

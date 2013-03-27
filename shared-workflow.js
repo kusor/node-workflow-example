@@ -57,8 +57,8 @@ var workflow = module.exports = {
             return client.get(
                 '/gists/' + job.gist_id + '/star',
                 function (err, req, res, obj) {
-                    // Indeed, there should be an error here, which will triger our
-                    // fallback, where we'll add the star to our gist
+                    // Indeed, there should be an error here, which will triger
+                    // our fallback, where we'll add the star to our gist
                     if (err) {
                         return cb(err);
                     } else {
