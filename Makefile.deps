@@ -12,7 +12,7 @@
 # javascriptlint
 #
 JSL_SCRIPT	= deps/javascriptlint/build/install/jsl
-JSL		= python2.6 $(JSL_SCRIPT)
+JSL		= python $(JSL_SCRIPT)
 
 $(JSL_SCRIPT): | deps/javascriptlint/.git
 	cd deps/javascriptlint && make install
