@@ -18,8 +18,10 @@
     "forks": 10,
     "run_interval": 6,
     "sandbox": {
-      "restify": "restify",
-      "uuid": "node-uuid"
+      "modules": {
+        "restify": "restify",
+        "uuid": "node-uuid"
+      }
     }
   }
 }
