@@ -1,4 +1,4 @@
-// Copyright 2013 Pedro P. Candel <kusorbox@gmail.com>. All rights reserved.
+// Copyright 2014 Pedro P. Candel <kusorbox@gmail.com>. All rights reserved.
 
 // Usage example for node-workflow using the REST API to create
 // workflows, queue jobs and obtain the results.
@@ -11,7 +11,7 @@
 //   `node api.js $login $password`
 
 if (process.argv.length < 4) {
-    console.error('Github username and password required as arguments');
+    console.error('Github username and password/token required as arguments');
     process.exit(1);
 }
 

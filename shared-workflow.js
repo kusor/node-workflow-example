@@ -1,4 +1,4 @@
-// Copyright 2013 Pedro P. Candel <kusorbox@gmail.com>. All rights reserved.
+// Copyright 2014 Pedro P. Candel <kusorbox@gmail.com>. All rights reserved.
 
 // This is shared by api.js and module.js examples
 
@@ -15,7 +15,7 @@ var workflow = module.exports = {
             if (!job.params.login || !job.params.password) {
                 return cb('No login/password provided');
             }
-            var client = restify.createJsonClient({
+            var client = restify.createJSONClient({
                 url: 'https://api.github.com'
             });
             client.basicAuth(job.params.login, job.params.password);
@@ -50,7 +50,7 @@ var workflow = module.exports = {
             if (!job.gist_id) {
                 return cb('Unknown gist id');
             }
-            var client = restify.createJsonClient({
+            var client = restify.createJSONClient({
                 url: 'https://api.github.com'
             });
             client.basicAuth(job.params.login, job.params.password);
@@ -70,7 +70,7 @@ var workflow = module.exports = {
         fallback: function (err, job, cb) {
             if (err.statusCode && err.statusCode === 404) {
                 // We know how to fix this: star it!:
-                var client = restify.createJsonClient({
+                var client = restify.createJSONClient({
                     url: 'https://api.github.com'
                 });
                 client.basicAuth(job.params.login, job.params.password);
@@ -97,7 +97,7 @@ var workflow = module.exports = {
             }
             // If we created a gist and something failed later, let's remove it:
             if (job.gist_id) {
-                var client = restify.createJsonClient({
+                var client = restify.createJSONClient({
                     url: 'https://api.github.com'
                 });
                 client.basicAuth(job.params.login, job.params.password);

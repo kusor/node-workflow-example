@@ -32,11 +32,11 @@ Note `make all` will setup all the required dependencies, node modules and run
 
 To run the Workflow API server:
 
-    ./bin/workflow-api path/to/config.json
+    ./node_modules/.bin/workflow-api config.json 2>&1 | ./node_modules/.bin/bunyan
 
 To run a Job Runner:
 
-    ./bin/workflow-runner path/to/config.json
+    ./node_modules/.bin/workflow-runner config.json 2>&1 | ./node_modules/.bin/bunyan
 
 Note that it's perfectly fine to run more than one Runner, either on the same
 or different machines, as far as they have access to Redis Server.
@@ -49,12 +49,12 @@ This repository contains everything needed to illustrate:
 Remember that, in order to process any `job` the `workflow-runner` needs
 to be initialized pointing to the aforementioned configuration file:
 
-    ./node_modules/.bin/workflow-runner config.json
+    ./node_modules/.bin/workflow-runner config.json 2>&1 | ./node_modules/.bin/bunyan
 
 Also, in order to be able to run the API based example mentioned below, the
 `workflow-api` HTTP server needs to be up and running too:
 
-    ./node_modules/.bin/workflow-api config.json
+    ./node_modules/.bin/workflow-api config.json 2>&1 | ./node_modules/.bin/bunyan
 
 Contents for the other files are:
 
@@ -77,7 +77,7 @@ Contents for the other files are:
 
 # LICENSE
 
-The MIT License (MIT) Copyright (c) 2013 Pedro Palazón Candel
+The MIT License (MIT) Copyright (c) 2014 Pedro Palazón Candel
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

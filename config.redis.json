@@ -13,7 +13,9 @@
   "runner": {
     "identifier": "cd925eef-93fb-4bfe-a820-2aaedf9fc006",
     "forks": 10,
-    "run_interval": 60,
+    "do_fork": false,
+    "run_interval": 250,
+    "activity_interval": 30000,
     "sandbox": {
         "modules": {
             "restify": "restify",
