@@ -25,6 +25,7 @@ If you want to use PostgreSQL:
 
     git clone git://github.com/kusor/node-workflow-example.git
     cd node-workflow-example
+    npm install
     make all
 
 Note `make all` will setup all the required dependencies, node modules and run
