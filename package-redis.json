@@ -16,8 +16,8 @@
     "wf": "~0.10",
     "wf-redis-backend": "~0.10",
     "bunyan": "0.23.1",
-    "restify": "2.6.1",
-    "node-uuid": "1.4.0",
+    "restify": "2.8.5",
+    "node-uuid": "1.4.2",
     "pooling": "0.4.6"
   },
   "devDependencies": {}
