@@ -44,7 +44,8 @@ client.post('/gists', {
         // obj.url === client.url + req.path + '/' + obj.id
         var gist = obj;
         console.info('Gist object with id ' + gist.id + ' created');
-        client.get('/gists/' + gist.id + '/star', function (err, req, res, obj) {
+        var path = '/gists/' + gist.id + '/star';
+        client.get(path, function (err, req, res, obj) {
             console.log(util.inspect(err, false, 8));
             console.log(util.inspect(obj, false, 8));
             if (err) {
